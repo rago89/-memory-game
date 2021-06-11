@@ -2,14 +2,68 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>memory game (demo)</title>
 
-    <link href="./public/style.css" rel="stylesheet" />
+    <style>
+      .centered {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+
+      td {
+        border: 1px solid black;
+        height: 5em;
+        width: 5em;
+      }
+
+      .hidden {
+        color: white;
+      }
+
+      .visible {
+        color:blue;
+      }
+
+      
+    </style>
   </head>
 
   <body>
-    <div id="root"></div>
+    <div id="root" class="centered">
+      <button id="reset">new game</button>
+      <table id="tiles">
+        <tbody>
+          <tr>
+            <td data-selected="no" class="hidden"></td>
+            <td data-selected="no" class="hidden"></td>
+            <td data-selected="no" class="hidden"></td>
+            <td data-selected="no" class="hidden"></td>
+          </tr>
+          <tr>
+            <td data-selected="no" class="hidden"></td>
+            <td data-selected="no" class="hidden"></td>
+            <td data-selected="no" class="hidden"></td>
+            <td data-selected="no" class="hidden"></td>
+          </tr>
+          <tr>
+            <td data-selected="no" class="hidden"></td>
+            <td data-selected="no" class="hidden"></td>
+            <td data-selected="no" class="hidden"></td>
+            <td data-selected="no" class="hidden"></td>
+          </tr>
+          <tr>
+            <td data-selected="no" class="hidden"></td>
+            <td data-selected="no" class="hidden"></td>
+            <td data-selected="no" class="hidden"></td>
+            <td data-selected="no" class="hidden"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
-    <script type="module" src="./src/init/index.js"></script>
+  <script src="./src/init/index.js"  type="module"></script> 
   </body>
 </html>
