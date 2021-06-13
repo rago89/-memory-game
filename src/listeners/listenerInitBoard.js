@@ -1,3 +1,3 @@
-import { initBoard } from '../procedures/initBoard.js';
+import { initBoard } from '../handlers/handlerInitBoard.js';
 
 window.addEventListener('load', initBoard);
