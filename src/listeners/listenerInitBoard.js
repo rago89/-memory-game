@@ -1,3 +1,3 @@
-import { initBoard } from '../handlers/handlerInitBoard.js';
+import { tableShuffle } from '../handlers/handlerInitBoard.js'
 
-window.addEventListener('load', initBoard);
+window.addEventListener('load', tableShuffle);

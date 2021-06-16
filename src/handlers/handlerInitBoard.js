@@ -1,16 +1,13 @@
-const initBoard = () => {
-  const tds = Array.from(document.getElementById("tiles").getElementsByTagName("td"));
-  // https://javascript.info/task/shuffle
-  const shuffledTds = [...tds.sort(() => Math.random() - 0.5)];
+import { initBoard } from "../procedures/initBoard.js";
 
-  for (let filler = 0; filler < tds.length / 2; filler++) {
-    for (let i = 0; i < 2; i++) {
-      const td = shuffledTds.pop();
-      td.innerHTML = filler;
-      td.className = "hidden";
-      td.dataset.selected = "no";
-    }
+const tableShuffle = () => {
+  const table = document.getElementById('tiles');
+  const tds = Array.from(table.getElementsByTagName("td"));
+
+  if (tds.some(td => td.dataset.selected === 'no')) {
+      initBoard();
+      return;
   }
-};
+}
 
-export { initBoard };
+export { tableShuffle };

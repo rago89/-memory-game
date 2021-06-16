@@ -1,69 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>memory game (demo)</title>
 
-    <style>
-      .centered {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-      }
+<head>
+  <meta charset="utf-8" />
+  <title>memory game (demo)</title>
 
-      td {
-        border: 1px solid black;
-        height: 5em;
-        width: 5em;
-      }
+  <style>
+    .centered {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
 
-      .hidden {
-        color: white;
-      }
+    td {
+      border: 1px solid black;
+      height: 5em;
+      width: 5em;
+    }
 
-      .visible {
-        color:blue;
-      }
+    .hidden {
+      color: white;
+    }
 
-      
-    </style>
-  </head>
+    .visible {
+      color: blue;
+    }
+  </style>
+</head>
 
-  <body>
-    <div id="root" class="centered">
-      <button id="reset">new game</button>
-      <table id="tiles">
-        <tbody>
-          <tr>
-            <td data-selected="no" class="hidden"></td>
-            <td data-selected="no" class="hidden"></td>
-            <td data-selected="no" class="hidden"></td>
-            <td data-selected="no" class="hidden"></td>
-          </tr>
-          <tr>
-            <td data-selected="no" class="hidden"></td>
-            <td data-selected="no" class="hidden"></td>
-            <td data-selected="no" class="hidden"></td>
-            <td data-selected="no" class="hidden"></td>
-          </tr>
-          <tr>
-            <td data-selected="no" class="hidden"></td>
-            <td data-selected="no" class="hidden"></td>
-            <td data-selected="no" class="hidden"></td>
-            <td data-selected="no" class="hidden"></td>
-          </tr>
-          <tr>
-            <td data-selected="no" class="hidden"></td>
-            <td data-selected="no" class="hidden"></td>
-            <td data-selected="no" class="hidden"></td>
-            <td data-selected="no" class="hidden"></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+<body id="body">
+  <div id="root" class="centered">
+    <button id="reset">new game</button>
+    <table id="tiles">
+      <tbody>
+        <tr>
+          <td data-selected="no" class="hidden"></td>
+          <td data-selected="no" class="hidden"></td>
+          <td data-selected="no" class="hidden"></td>
+          <td data-selected="no" class="hidden"></td>
+        </tr>
+        <tr>
+          <td data-selected="no" class="hidden"></td>
+          <td data-selected="no" class="hidden"></td>
+          <td data-selected="no" class="hidden"></td>
+          <td data-selected="no" class="hidden"></td>
+        </tr>
+        <tr>
+          <td data-selected="no" class="hidden"></td>
+          <td data-selected="no" class="hidden"></td>
+          <td data-selected="no" class="hidden"></td>
+          <td data-selected="no" class="hidden"></td>
+        </tr>
+        <tr>
+          <td data-selected="no" class="hidden"></td>
+          <td data-selected="no" class="hidden"></td>
+          <td data-selected="no" class="hidden"></td>
+          <td data-selected="no" class="hidden"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 
-  <script src="./src/init/index.js"  type="module"></script> 
-  </body>
+  <script src="./src/init/index.js" type="module"></script>
+</body>
+
 </html>

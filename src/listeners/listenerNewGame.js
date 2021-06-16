@@ -1,5 +1,5 @@
-import { initBoard } from "../handlers/handlerInitBoard.js";
+import { newGame } from "../handlers/handlerNewGame.js"; 
 
 const newGameButton = document.getElementById('reset');
 
-newGameButton.addEventListener('click', initBoard);
+newGameButton.addEventListener('click', newGame);
