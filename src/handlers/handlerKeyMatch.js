@@ -8,10 +8,19 @@ const cellsArray = Array.from(cells);
 export const handlerKeyMatch = () => {
   const firstKey = numberCell[0];
   const secondKey = numberCell[1];
-  // console.dir(numberCell);
-  // console.dir(cells);
   if (typeof firstKey === "undefined") return;
+  // if user set as first selection again a key matched
+  if (firstKey.dataset.selected === "yes") {
+    numberCell.splice(0);
+    return;
+  }
   if (numberCell.length === 1) return;
+  // if a key not matched is compared with one already matched
+  if (firstKey.dataset.selected === "no" && secondKey.dataset.selected === "yes") {
+    numberCell[0].classList.remove("visible");
+    numberCell[0].classList.add("hidden");
+    return;
+  }
   // if the user select twice the same TD
   if (
     firstKey.offsetHeight === secondKey.offsetHeight &&
