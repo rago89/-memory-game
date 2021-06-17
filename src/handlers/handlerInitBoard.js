@@ -1,6 +1,6 @@
 import { initBoard } from "../procedures/initBoard.js";
 
-const tableShuffle = () => {
+export const tableShuffle = () => {
   const table = document.getElementById('tiles');
   const tds = Array.from(table.getElementsByTagName("td"));
 
@@ -9,5 +9,3 @@ const tableShuffle = () => {
       return;
   }
 }
-
-export { tableShuffle };

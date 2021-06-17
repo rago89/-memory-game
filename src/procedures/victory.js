@@ -1,4 +1,4 @@
-const victoryMessage = () => {
+export const victoryMessage = () => {
   const tiles = document.getElementById("tiles");
   tiles.style.display = "none";
   const divRoot = document.getElementById("root");
@@ -10,4 +10,3 @@ const victoryMessage = () => {
   divRoot.append(h2);
 };
 
-export { victoryMessage };

@@ -1,3 +1,2 @@
-const numberCell = [];
+export const numberCell = [];
 
-export { numberCell };

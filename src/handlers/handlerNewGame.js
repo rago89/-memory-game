@@ -1,6 +1,6 @@
 import { initBoard } from "../procedures/initBoard.js";
 
-const newGame = () => {
+export const newGame = () => {
     //const body = document.getElementById('body');
     const table = document.getElementById('tiles');
     const tds = Array.from(table.getElementsByTagName("td"));
@@ -16,5 +16,3 @@ const newGame = () => {
         initBoard();
     }
 }
-
-export { newGame };

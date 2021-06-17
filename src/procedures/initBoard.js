@@ -1,4 +1,4 @@
-const initBoard = () => {
+export const initBoard = () => {
     const tds = Array.from(document.getElementById("tiles").getElementsByTagName("td"));
     // https://javascript.info/task/shuffle
     const shuffledTds = [...tds.sort(() => Math.random() - 0.5)];
@@ -12,5 +12,3 @@ const initBoard = () => {
       }
     }
   };
-  
-  export { initBoard };
