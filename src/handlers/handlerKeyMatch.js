@@ -19,6 +19,7 @@ export const handlerKeyMatch = () => {
   if (firstKey.dataset.selected === "no" && secondKey.dataset.selected === "yes") {
     numberCell[0].classList.remove("visible");
     numberCell[0].classList.add("hidden");
+    numberCell.splice(0);
     return;
   }
   // if the user select twice the same TD
