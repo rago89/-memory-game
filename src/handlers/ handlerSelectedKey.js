@@ -1,6 +1,9 @@
 import { numberCell } from "../data.js";
 
 export const handlerSelectedKey = (event) => {
+  if (numberCell.length === 2) {
+    return;
+  }
   const { target } = event;
   const { tagName } = target;
   if (tagName !== "TD") {
