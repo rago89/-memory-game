@@ -17,7 +17,8 @@ export const handlerKeyMatch = () => {
   if (numberCell.length === 1) return;
   // if a key not matched is compared with one already matched
   if (firstKey.dataset.selected === "no" && secondKey.dataset.selected === "yes") {
-    toggleItems(numberCell);
+    numberCell[0]?.classList?.remove("visible");
+    numberCell[0]?.classList?.add("hidden");
     numberCell.splice(0);
     return;
   }
@@ -39,6 +40,7 @@ export const handlerKeyMatch = () => {
   } else {
     // the argument of the callback function is passed as a third argument in the setTimeOut function
     setTimeout(toggleItems, 500, numberCell);
+    return;
   }
 
   // victory message

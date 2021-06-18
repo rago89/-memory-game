@@ -1,6 +1,7 @@
 import { numberCell } from "../data.js";
 
 export const handlerSelectedKey = (event) => {
+  // break selection if sietTimeOut function is running
   if (numberCell.length === 2) {
     return;
   }
